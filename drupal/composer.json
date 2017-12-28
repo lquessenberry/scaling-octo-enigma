@@ -35,6 +35,7 @@
         "drupal/remote_stream_wrapper": "^1.0",
         "drupal/remote_stream_wrapper_widget": "^1.0",
         "drupal/thunder_admin": "^2.0@beta",
+        "drupal/token": "^1.1",
         "drush/drush": "~8.0|^9.0.0-beta8",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
