@@ -4,6 +4,8 @@ label: JSON feed of products
 migration_group: pornstars
 
 source:
+  constants:
+    url_a: 'https://www.pornhub.com/webmasters/search?id=44bc40f3bc04f65b7a35&search='
   plugin: url
   data_fetcher_plugin: http
   data_parser_plugin: json
@@ -35,6 +37,13 @@ process:
   title: star_name
   body: star_thumb
   field_thumbnail: star_thumb
+
+  field_search_url:
+    plugin: concat
+    source:
+      - constants/url_a
+      - star_name
+
 
   sticky:
     plugin: default_value
